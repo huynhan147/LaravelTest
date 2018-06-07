@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Comment;
 use Carbon\Carbon;
 use App\Tag;
+use Illuminate\Support\Facades\DB;
 
 class Post extends Model
 {
@@ -36,13 +37,13 @@ class Post extends Model
     public static function archives(){
 //        $test = static ::selectRaw('created_at as name');
 //        return $test;
-
-
-        return static::selectRaw('YEAR(created_at) as year,MONTHNAME(created_at) as month, count(*) published')
-            ->groupBy('year','month')
-            ->orderByRaw('min(created_at) desc')
-            ->get()
-            ->toArray();
+       $test = DB::select(DB::raw('select YEAR(created_at) as year,MONTHNAME(created_at) as month, count(*) published from  posts group by year, month order by min(created_at) desc'));
+        return $test;
+//        return static::selectRaw('YEAR(created_at) as year,MONTHNAME(created_at) as month, count(*) published')
+//            ->groupBy('year','month')
+//            ->orderByRaw('min(created_at) desc')
+//            ->get()
+//            ->toArray();
     }
     public function tags(){
         return $this->belongsToMany(Tag::class);
