@@ -47,6 +47,7 @@ Route::group(['prefix'=>'/admins'],function(){
     Route::get('/province-add','ProvinceController@add');
     Route::post('/province','ProvinceController@store');
     Route::get('/post/create','PostsController@create');
+    Route::get('/','AdminController@index');
 });
 
 //Auth::routes();
