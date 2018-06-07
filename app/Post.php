@@ -34,7 +34,8 @@ class Post extends Model
 //        $posts = $posts->get();
     }
     public static function archives(){
-//        $test = static ::
+//        $test = static ::selectRaw('created_at as name');
+//        return $test;
 
 
         return static::selectRaw('YEAR(created_at) as year,MONTHNAME(created_at) as month, count(*) published')

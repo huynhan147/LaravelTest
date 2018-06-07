@@ -1,4 +1,4 @@
-{{--{{ dd($archives) }}--}}
+{{--{{ dd($archives->name) }}--}}
 <aside class="col-md-4 blog-sidebar">
     <div class="p-3 mb-3 bg-light rounded">
         <h4 class="font-italic">About</h4>
@@ -8,9 +8,9 @@
     <div class="p-3">
         <h4 class="font-italic">Archives</h4>
         <ol class="list-unstyled mb-0">
-            @foreach($archives as $m)
-                <li><a href="/?month={{ $m['month'] }}&&year={{ $m['year'] }}">{{ $m['month']  }} {{ $m['year'] }}</a></li>
-            @endforeach
+            {{--@foreach($archives as $m)--}}
+                {{--<li><a href="/?month={{ $m['month'] }}&&year={{ $m['year'] }}">{{ $m['month']  }} {{ $m['year'] }}</a></li>--}}
+            {{--@endforeach--}}
         </ol>
     </div>
 
