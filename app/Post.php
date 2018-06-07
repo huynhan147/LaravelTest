@@ -37,7 +37,7 @@ class Post extends Model
     public static function archives(){
 //        $test = static ::selectRaw('created_at as name');
 //        return $test;
-       $test = DB::select(DB::raw('select YEAR(created_at) as year,MONTHNAME(created_at) as month, count(*) published from  posts group by year, month order by min(created_at) desc'));
+       $test = DB::select(DB::raw("select date_part('year',created_at) as year,date_part('month',created_at) as month, count(*) published from  posts group by year, month order by min(created_at) desc"));
         return $test;
 //        return static::selectRaw('YEAR(created_at) as year,MONTHNAME(created_at) as month, count(*) published')
 //            ->groupBy('year','month')
