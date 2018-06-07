@@ -18,7 +18,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         $this->app['view']->composer(['layouts.sidebar'],function($view){
-            $archives = \App\Post::archives();
+//            $archives = \App\Post::archives();
+            $archives = 'a';
             $tags = \App\Tag::has('posts')->pluck('name');
             $view->with(compact('tags','archives'));
         });
