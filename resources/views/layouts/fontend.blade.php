@@ -11,10 +11,10 @@
     <title>Blog Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url('css/app.css') }}" rel="stylesheet">
+    <link href="/css/app.css'" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{{ url('css/blog.css') }}" rel="stylesheet">
+    <link href="/css/blog.css'" rel="stylesheet">
 </head>
 
 <body>
