@@ -7,6 +7,10 @@ use App\Models\Province;
 
 class ProvinceController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(){
         $pro = Province::all();
         return view('admins.province',compact('pro'));

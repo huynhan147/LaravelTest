@@ -52,7 +52,7 @@ Route::group(['prefix'=>'/admins'],function(){
 //Auth::routes();
 
 Route::get('/home', 'PostsController@index')->name('home');
-Route::get('/login','SessionController@create');
+Route::get('/login','SessionController@create')->name('login');
 Route::post('/login','SessionController@store');
 Route::get('/register','RegistrationController@create');
 Route::post('/register','RegistrationController@store');
