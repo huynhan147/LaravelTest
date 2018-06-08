@@ -10,10 +10,10 @@
     <title>Dashboard Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url('css/app.css') }}" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="url('css/dasboard.css')" rel="stylesheet">
+    <link href="/css/dasboard.css" rel="stylesheet">
 </head>
 
 <body>
