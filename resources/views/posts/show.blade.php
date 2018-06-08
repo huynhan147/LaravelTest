@@ -1,6 +1,10 @@
 @extends('layouts.fontend')
 
 @section('content')
+    <?php
+    use Carbon\Carbon;
+    Carbon::setLocale('vi');
+    ?>
     <div class="blog-post">
         <h2 class="blog-post-title">
             {{$post->title}}
@@ -23,6 +27,7 @@
         <div class="comment">
             <ul class="list-group">
                 @foreach($post->comments as $comment)
+
                     <li class="list-group-item">
                         <strong>
                             {{ $comment->user->name }} :
