@@ -18,7 +18,7 @@
         <h4 class="font-italic">Tags</h4>
         <ol class="list-unstyled">
             @foreach($tags as $tag)
-                <li class="badge badge-pill badge-light"><a href="/posts/tags/{{$tag}}">{{$tag}}</a></li>
+                <li><span class="badge badge-pill badge-primary"><a href="/posts/tags/{{$tag}}" class="text-white">{{$tag}}</a></span></li>
             @endforeach
         </ol>
     </div>
