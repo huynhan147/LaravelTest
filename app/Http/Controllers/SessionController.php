@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\Login;
 
 class SessionController extends Controller
 {
@@ -18,7 +17,7 @@ class SessionController extends Controller
         return view('session.create');
 
     }
-    public function store(Login $rq){
+    public function store(){
         if(! auth()->attempt(request(['email','password'])))
         {
             return back()->withErrors([
