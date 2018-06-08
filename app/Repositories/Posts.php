@@ -15,7 +15,7 @@ class Posts{
 
 
     public function all(){
-        return Post::all();
+        return Post::orderBy('created_at','desc')->get();
 
 
     }
