@@ -1,8 +1,8 @@
 {{--{{ dd($archives) }}--}}
 <aside class="col-md-4 blog-sidebar">
     <div class="p-3 mb-3 bg-light rounded">
-        <h4 class="font-italic">About</h4>
-        <p class="mb-0">My Blog <em>is a top news site</em> in vietnam</p>
+        <h4 class="font-italic">Giới thiệu</h4>
+        <p class="mb-0">My Blog nơi chia sẻ kiến thức</p>
     </div>
 
     {{--<div class="p-3">--}}

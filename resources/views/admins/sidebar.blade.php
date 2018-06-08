@@ -12,7 +12,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="/admins/province">
                             <span data-feather="home"></span>
-                            Dashboard <span class="sr-only">(current)</span>
+                            Province
+                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">

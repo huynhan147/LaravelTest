@@ -19,9 +19,9 @@
                 <thead>
                 <tr>
                     <th>#</th>
+                    <th>ID</th>
                     <th>Title</th>
-                    <th>Auth</th>
-                    <th colspan="2">Action</th>
+                    <th colspan="2">Auth</th>
                 </tr>
                 </thead>
                 <tbody>
