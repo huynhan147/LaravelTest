@@ -41,7 +41,7 @@ Route::post('/posts','PostsController@store');
 //});
 Route::post('/posts/{id}/comments','CommentsController@store');
 Route::get('/posts/tags/{tag}','TagsController@index');
-Route::group(['prefix'=>'/admins'],function(){
+Route::group(['prefix'=>'/admins','middleware'=>'auth'],function(){
     Route::get('/province','ProvinceController@index');
     Route::get('/province/{id}','ProvinceController@show');
     Route::get('/province-add','ProvinceController@add');

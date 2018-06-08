@@ -15,6 +15,18 @@
                             Add Province
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admins/addtag">
+                            <span data-feather="file"></span>
+                            Add Tag
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admins/settag">
+                            <span data-feather="file"></span>
+                            SetTag
+                        </a>
+                    </li>
 
                 </ul>
             </div>
