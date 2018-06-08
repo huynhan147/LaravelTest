@@ -12,5 +12,5 @@
         {{ $post->user->name }} on
         {{ $post->created_at->toDayDateTimeString() }}</p>
 
-    <p>{{ $post->body }}</p>
+    <p class="txt-content">{{ $post->body }}</p>
 </div>
