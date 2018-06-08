@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Tag;
 use App\PostTag;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
