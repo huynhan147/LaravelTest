@@ -18,7 +18,7 @@ class SessionController extends Controller
         return view('session.create');
 
     }
-    public function store(Login $request){
+    public function store(){
         if(! auth()->attempt(request(['email','password'])))
         {
             return back()->withErrors([
