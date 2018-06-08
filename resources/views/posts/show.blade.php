@@ -7,9 +7,9 @@
 
         </h2>
         @if(count($post->tags))
-            <ul>
+            <ul class="list-inline">
                 @foreach($post->tags as $tag)
-                    <li><a href="/posts/tags/{{$tag->name}}">{{$tag->name}}</a></li>
+                    <li class="list-inline-item badge badge-pill badge-dark"><a href="/posts/tags/{{$tag->name}}" class="text-white">{{$tag->name}}</a></li>
                 @endforeach
             </ul>
         @endif
