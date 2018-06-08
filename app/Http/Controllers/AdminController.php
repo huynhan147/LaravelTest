@@ -36,11 +36,10 @@ class AdminController extends Controller
         return view('admins.settag',compact('post','tag'));
     }
     public function storesettag(){
-        $pt = new PostTag();
-        $pt->post_id = request()->post;
-        $pt->tag_id = request()->tag;
+        $post = request()->post;
+        $tag = request()->tag;
+        DB::table('post_tag')->insert(['post_id'=>$post,'tag_id'=>$tag]);
         session()->flash('message','Success Set Tag');
-        $pt->save();
         return back();
     }
 }
