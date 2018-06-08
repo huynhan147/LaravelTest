@@ -3,17 +3,13 @@
         <a href="/posts/{{ $post->id }}">
             {{$post->title}}
         </a>
-        {{--@if(count($post->tag))--}}
-        {{--<ul>--}}
-        {{--@foreach($post->tag as $tag)--}}
-        {{--<li><a href="/posts/tags/{{$tag}}">{{$tag}}</a></li>--}}
-        {{--@endforeach--}}
-        {{--</ul>--}}
-        {{--@endif--}}
+        @if(Auth::check() && auth()->user()->id == $post->user->id)
+            <span class="blog-post-title"> &nbsp; <a href="/admins/post-delete/{{ $post->id }}">x</a></span>
+        @endif
     </h2>
     <p class="blog-post-meta">
         {{ $post->user->name }} on
         {{ $post->created_at->toDayDateTimeString() }}</p>
 
     <p>{{ $post->body }}</p>
-</div><!-- /.blog-post -->
+</div>

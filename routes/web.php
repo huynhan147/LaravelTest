@@ -48,6 +48,11 @@ Route::group(['prefix'=>'/admins'],function(){
     Route::post('/province','ProvinceController@store');
     Route::get('/post/create','PostsController@create');
     Route::get('/','AdminController@index');
+    Route::get('/post-delete/{id}','AdminController@destroy');
+    Route::get('/addtag','AdminController@addtag');
+    Route::post('/addtag','AdminController@storetag');
+    Route::get('/settag','AdminController@settag');
+    Route::post('/settag','AdminController@storesettag');
 });
 
 //Auth::routes();

@@ -19,12 +19,13 @@
                 <thead>
                 <tr>
                     <th>#</th>
+                    <th>id</th>
                     <th>Title</th>
                     <th>Auth</th>
-                    <th colspan="2">Action</th>
                 </tr>
                 </thead>
                 <tbody>
+                {{--{{ dd($listpost) }}--}}
                 @foreach($listpost as $key=> $p)
                     <tr>
                         <td>{{ $key+1 }}</td>

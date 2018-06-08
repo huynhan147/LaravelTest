@@ -15,7 +15,7 @@ class Posts{
 
 
     public function all(){
-        return Post::paginate(3);
+        return Post::all();
 
 
     }
