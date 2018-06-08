@@ -13,4 +13,5 @@
         {{ $post->created_at->toDayDateTimeString() }}</p>
 
     <p class="txt-content">{{ $post->body }}</p>
+    <a href="/posts/{{ $post->id }}">Xem thêm</a>
 </div>

@@ -17,11 +17,11 @@ class SessionController extends Controller
         return view('session.create');
 
     }
-    public function store(){
+    public function store(Login $request){
         if(! auth()->attempt(request(['email','password'])))
         {
             return back()->withErrors([
-                'message' => 'Sigin Fail'
+                'message' => 'Sai tài khoản hoặc mật khẩu'
             ]);
         }
         return redirect()->home();
