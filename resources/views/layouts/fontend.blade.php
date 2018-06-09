@@ -20,7 +20,7 @@
 
 <body>
 <div class="container">
-    @include('layouts.nav');
+    @include('layouts.nav')
     @if($flash = session('message'))
         <div id="alert-flash" class="alert alert-success" role="alert">
             {{ $flash }}
