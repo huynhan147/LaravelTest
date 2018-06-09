@@ -26,7 +26,7 @@
                 <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
 
             </div>
-            <input type="text" class="role" id="role">
+            <input type="text" class="role" id="role" name="role">
             <button type="submit" class="btn btn-primary" name="btnsubmit">Đăng ký</button>
         </form>
         @include('layouts.errors');
