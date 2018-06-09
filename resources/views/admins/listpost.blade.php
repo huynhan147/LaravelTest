@@ -36,6 +36,9 @@
                 @endforeach
                 </tbody>
             </table>
+            <nav class="blog-pagination">
+                {{ $listpost->appends(request()->query())->links() }}
+            </nav>
         </div>
     </main>
 @endsection
