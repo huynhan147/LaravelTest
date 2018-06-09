@@ -12,7 +12,7 @@
 
 
                 <nav class="blog-pagination">
-                    {{--{{ $posts->appends(request()->query())->links() }}--}}
+                    {{ $posts->appends(request()->query())->links() }}
                 </nav>
 
             </div><!-- /.blog-main -->

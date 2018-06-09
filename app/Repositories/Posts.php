@@ -15,7 +15,7 @@ class Posts{
 
 
     public function all(){
-        return Post::orderBy('created_at','desc')->get();
+        return Post::orderBy('created_at','desc')->paginate(3);
 
 
     }
