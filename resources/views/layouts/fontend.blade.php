@@ -26,7 +26,7 @@
             {{ $flash }}
         </div>
     @endif
-    <main role="main" class="container">
+    <main role="main" class="container px-0">
         <div class="row">
             <div class="col-md-8 blog-main">
 
