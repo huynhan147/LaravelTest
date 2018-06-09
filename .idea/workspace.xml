@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8ebbe63-b847-4651-91e1-6343bf4b251f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/fontend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/fontend.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="d8ebbe63-b847-4651-91e1-6343bf4b251f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/posts/create.blade.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -60,11 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fontend.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fontend.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/fontend.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
               <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settag.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admins/settag.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -151,6 +149,7 @@
         <option value="$PROJECT_DIR$/resources/views/registration/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admins/listpost.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/fontend.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admins/settag.blade.php" />
       </list>
     </option>
   </component>
@@ -401,12 +400,12 @@
       <workItem from="1528422250577" duration="409000" />
       <workItem from="1528428038194" duration="7284000" />
       <workItem from="1528452285715" duration="1875000" />
-      <workItem from="1528488648802" duration="12323000" />
+      <workItem from="1528488648802" duration="12920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37036000" />
+    <option name="totallyTimeSpent" value="37633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="25" width="1327" height="743" extended-state="6" />
@@ -418,8 +417,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49960968" visible="true" weight="0.3295082" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27868852" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49960968" visible="true" weight="0.3295082" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27868852" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -517,9 +516,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/PostTag.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admins/settag.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admins/header.blade.php">
@@ -798,6 +794,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admins/settag.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
         </state>
       </provider>
     </entry>
