@@ -12,7 +12,7 @@
                 <label for="exampleFormControlSelect1">Tag</label>
                 <select class="form-control" id="tag" name="tag">
                     @foreach($tag as $val)
-                        @if($val->user->id ==auth()->user()->id)
+                        @if(($val->user->id ==auth()->user()->id) or auth()->user()->role ==1)
                             <option value=" {{ $val->id }}">{{ $val->title }}</option>
                         @endif
                         @endforeach
