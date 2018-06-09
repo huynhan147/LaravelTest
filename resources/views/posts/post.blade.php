@@ -5,7 +5,7 @@
         </a>
 
     </h2>
-    {{ dd(Auth::user()->role) }}
+    {{ dd(Auth::user()) }}
     @if((Auth::check() && (auth()->user()->id == $post->user->id)||isset(Auth::user()->role) &&Auth::user()->role == 1))
     <span class="blog-post-title"> &nbsp; <a href="/admins/post-delete/{{ $post->id }}"><i class="fas fa-trash-alt"></i></a></span>
     @endif
