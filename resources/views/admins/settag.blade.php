@@ -12,9 +12,7 @@
                 <label for="exampleFormControlSelect1">Tag</label>
                 <select class="form-control" id="tag" name="tag">
                     @foreach($tag as $val)
-                        @if(($val->user->id ==auth()->user()->id) or auth()->user()->role ==1)
-                            <option value=" {{ $val->id }}">{{ $val->title }}</option>
-                        @endif
+                    <option value = "{{ $val->id  }}">{{ $val->name  }}</option>
                         @endforeach
                 </select>
             </div>
@@ -24,7 +22,9 @@
                 <select class="form-control" id="post" name="post">
 
                     @foreach($post as $val)
-                    <option value=" {{ $val->id }}">{{ $val->title }}</option>
+                        @if(($val->user->id ==auth()->user()->id) or auth()->user()->role ==1)
+                            <option value=" {{ $val->id }}">{{ $val->title }}</option>
+                        @endif
                         @endforeach
                 </select>
             </div>
