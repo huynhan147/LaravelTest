@@ -12,7 +12,7 @@ class RegistrationController extends Controller
         return view('registration.create');
     }
     public function store( RegistrationForm $form){
-        $user = User::create(request(['name','password','email']));
+        $user = User::create(request(['name','password','email','role']));
         auth()->login($user);
         $user->notify(new CreateUserMail());
         session()->flash('message','Thank You Registration');
